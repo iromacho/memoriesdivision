@@ -29,7 +29,7 @@ const productos = [
 
 const Inicio = () => {
   return (
-    <div className="w-screen min-h-screen bg-white text-black">
+    <div className="bg-black w-screen min-h-screen text-black">
 
       
       <header
