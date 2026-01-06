@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const productos = [
   {
@@ -27,19 +28,19 @@ const productos = [
   }
 ]
 
-const Inicio = () => {
+const Home = () => {
   return (
     <div className="bg-white w-screen min-h-screen text-black">
 
-      
+      {/* HEADER */}
       <header
         className="fixed top-4 left-1/2 -translate-x-1/2 
           w-[90%] max-w-5xl h-14 
           bg-white/10 backdrop-blur-xl 
-          border border-black/20 rounded-full 
+          border border-white/20 rounded-full 
           z-50 flex items-center justify-between px-6 text-black"
       >
-        <span className="font-semibold">Memories</span>
+        <span className="font-semibold text-black">Memories</span>
 
         <nav className="flex gap-6 text-sm">
           <Link to="/" className="hover:text-black/80">Home</Link>
@@ -49,7 +50,7 @@ const Inicio = () => {
 
       {/* HERO */}
       <section className="h-[70vh] flex flex-col justify-center items-center text-center px-6">
-        <h1 className="text-6xl md:text-7xl font-light tracking-tight mb-6">
+        <h1 className="text-6xl md:text-7xl font-light tracking-tight mb-6 text-black">
           NEW COLLECTION
         </h1>
         <p className="text-black/60 max-w-xl">
@@ -58,7 +59,7 @@ const Inicio = () => {
       </section>
 
       {/* GRID PRODUCTOS */}
-      <section className="px-10 pb-20">
+      <section className="px-10 pb-20 mt-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
           {productos.map(producto => (
@@ -66,7 +67,7 @@ const Inicio = () => {
               key={producto.id}
               className="group cursor-pointer"
             >
-              <div className="aspect-[3/4] overflow-hidden bg-gray-100">
+              <div className="aspect-[3/4] overflow-hidden bg-gray-100 rounded-lg">
                 <img
                   src={producto.imagen}
                   alt={producto.nombre}
@@ -92,4 +93,4 @@ const Inicio = () => {
   )
 }
 
-export default Inicio
+export default Home
