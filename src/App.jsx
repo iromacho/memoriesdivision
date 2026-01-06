@@ -89,6 +89,7 @@ const App = () => {
 
           {/* INICIO (ZARA STYLE) */}
           <Route path="/inicio" element={<Inicio />} />
+          <Route path="/producto/:id" element={<Producto />} />
 
         </Routes>
       </div>
