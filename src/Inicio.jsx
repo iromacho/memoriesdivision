@@ -31,6 +31,22 @@ const Inicio = () => {
   return (
     <div className="w-screen min-h-screen bg-white text-black">
 
+      
+      <header
+        className="fixed top-4 left-1/2 -translate-x-1/2 
+          w-[90%] max-w-5xl h-14 
+          bg-white/10 backdrop-blur-xl 
+          border border-white/20 rounded-full 
+          z-50 flex items-center justify-between px-6 text-white"
+      >
+        <span className="font-semibold">Memories</span>
+
+        <nav className="flex gap-6 text-sm">
+          <Link to="/" className="hover:text-white/80">Home</Link>
+          <Link to="/inicio" className="hover:text-white/80">Ropa</Link>
+        </nav>
+      </header>
+
       {/* HERO */}
       <section className="h-[70vh] flex flex-col justify-center items-center text-center px-6">
         <h1 className="text-6xl md:text-7xl font-light tracking-tight mb-6">
