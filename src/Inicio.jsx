@@ -36,8 +36,8 @@ const Home = () => {
       <header
         className="fixed top-4 left-1/2 -translate-x-1/2 
           w-[90%] max-w-5xl h-14 
-          bg-white/10 backdrop-blur-xl 
-          border border-white/20 rounded-full 
+          bg-black/10 backdrop-blur-xl 
+          border border-black/20 rounded-full 
           z-50 flex items-center justify-between px-6 text-black"
       >
         <span className="font-semibold text-black">Memories</span>
