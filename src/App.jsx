@@ -2,6 +2,8 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import DarkVeil from './DarkVeil'
 import Inicio from './Inicio'
+import Producto from './Producto'
+
 
 const App = () => {
   return (
@@ -16,7 +18,7 @@ const App = () => {
           border border-white/20 rounded-full 
           z-50 flex items-center justify-between px-6 text-white"
         >
-          <span className="font-semibold">Memories</span>
+          <span className="font-semibold">Memories Division</span>
 
           <nav className="flex gap-6 text-sm">
             <Link to="/" className="hover:text-white/80">Home</Link>
@@ -89,6 +91,8 @@ const App = () => {
 
           {/* INICIO (ZARA STYLE) */}
           <Route path="/inicio" element={<Inicio />} />
+
+          {/* PRODUCTO DETALLE */}
           <Route path="/producto/:id" element={<Producto />} />
 
         </Routes>
