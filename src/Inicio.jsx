@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Producto from './Producto'
+
 
 const productos = [
   { id: 1, nombre: 'Chaqueta oversize', precio: '59,95 €', imagen: 'https://images.unsplash.com/photo-1520975916090-3105956dac38' },
