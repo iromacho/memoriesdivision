@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import Inicio from './Inicio'
 
 const productos = [
   { id: 1, nombre: 'Chaqueta oversize', precio: '59,95 €', imagen: 'https://images.unsplash.com/photo-1520975916090-3105956dac38' },
@@ -9,7 +9,7 @@ const productos = [
   { id: 4, nombre: 'Abrigo largo lana', precio: '89,95 €', imagen: 'https://images.unsplash.com/photo-1512436991641-6745cdb1723f' }
 ]
 
-const Inicio = () => {
+const Home = () => {
   return (
     <div className="w-screen min-h-screen bg-white text-black relative">
 
@@ -75,4 +75,4 @@ const Inicio = () => {
   )
 }
 
-export default Inicio
+export default Home
