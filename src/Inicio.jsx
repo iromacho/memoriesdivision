@@ -9,7 +9,7 @@ const productos = [
   { id: 4, nombre: 'Abrigo largo lana', precio: '89,95 €', imagen: 'https://images.unsplash.com/photo-1512436991641-6745cdb1723f' }
 ]
 
-const Home = () => {
+const Inicio = () => {
   return (
     <div className="w-screen min-h-screen bg-white text-black relative">
 
@@ -75,4 +75,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Inicio
